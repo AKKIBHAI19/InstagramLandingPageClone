@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    margin-top: 32px;
+}
+#leftAside {
+    position: relative;
+    margin: 120px 0px;
+    height: 600.15px;
+    /* width: 380.32px; */
+    flex-basis: 380.32px;
+    /* background-size: 468.32px 634.15px; */
+    background-image: url("https://i.ibb.co/mCvjx9T/home-phones.png");
+    background-size: cover;
+    background-position: bottom;
+    margin-right: 32px;
+    margin-bottom: 12px;
+    transform: scale(1.1);
+}
+
+h1{
+    font-family: "Nova Mono", monospace;
+    font-size: 40px;
+  
+}
+#rightAside{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   row-gap: 10px;
+   padding-top: 50px;
+}
+#formD{
+   display: flex;
+   flex-direction: column;
+   width: 350px;
+   height: 409px;
+   align-items: center;
+   justify-content: space-around;
+   /* row-gap: 30px; */
+   border:0.75px solid #DBDBDB;
+   padding: 30px 0px;
+   row-gap: 5px;
+   /* padding-top:100px ; */
+}
+img{
+    width: 175px;
+    /* margin-top: 30px; */
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+input[type="text"],input[type="password"]{
+    font-size: 12px;
+    color: #737373;
+    width: 280px;
+    height: 35px;
+    border:0.75px solid #DBDBDB;
+    padding: 16px 10px;
+    border-radius: 5px;
+}
+span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #737373;
+    font-size: small;
+    letter-spacing: 0px;
+}
+button{
+    height: 32px;
+    border-radius: 10px;
+    background-color: #4CB5F9;
+    color: #fff;
+    border: none;
+    margin-top: 8px;
+}
+#NoAccount{
+    width: 350px;
+    height: 63px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px ;
+    gap: 5px ;
+    border:0.75px solid #b5b4b4;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#logAtt i{
+   transform: scale(1.3);
+   margin-right: 8px;
+}
+#logAtt{
+    color: #385185;
+    text-decoration: none;
+    font-size: 14px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+#forgot{
+    text-decoration: none;
+    color: #00376B;
+    font-size: small;
+}
+#NoAccount span a{
+    font-size: 14px;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: #0095f6;
+
+
+}
+.line-container{
+    margin: 10px 0px;
+}
+#animeImages{
+    height: 85%;
+    width: 65%;
+    position: absolute;
+    top: 23px;
+    left: 114px;
+    padding-top: 25px;
+    background-color: #00376b4a;
+    background-image: url("https://i.ibb.co/h2nDdrK/i1.png");
+    background-size: contain;
+    background-position: center;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    animation: pics ease-in-out 20s infinite  ;
+}
+@keyframes pics {
+    0%,100%{
+         background-image:url("https://i.ibb.co/h2nDdrK/i1.png") ;
+    }
+    15%{
+        background-image:url("https://i.ibb.co/h2nDdrK/i1.png") ;
+    }
+    25%{
+       background-image: url("https://i.ibb.co/0XF4Pny/i2.png");
+
+    }
+    40%{
+        background-image: url("https://i.ibb.co/0XF4Pny/i2.png");
+    }
+    50%{
+        background-image: url("https://i.ibb.co/PhPM4dK/i3.png");
+
+    }
+    65%{
+        background-image: url("https://i.ibb.co/PhPM4dK/i3.png");
+    }
+    75%{
+        background-image: url("https://i.ibb.co/XDZB58d/i4.png");
+    }
+    90%{
+        background-image: url("https://i.ibb.co/XDZB58d/i4.png");
+    }
+}
+#getApp{
+    align-self: center;
+    color: #000;
+    margin: 13px;
+    font-weight: 400;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#storeLinks{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    /* width: 350px; */
+}
+#storeLinks img{
+  /* flex-basis: 110px; */
+  width: 110px;
+  height: 40px;
+}
+#storeLinks img:nth-child(1){
+    width: 134px;
+}
+footer{margin: 110px 0px;
+    height: 83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer #footerTop{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 10px;
+    /* font-size: x-small; */
+}
+footer #footerTop span{
+    font-size: 12px;
+}
+footer #footerBottom{
+    display: flex;
+    gap: 20px;
+    /* font-size: x-small; */
+}
+footer #footerBottom span{
+    font-size: 12px;
+}
+@media (width <= 875px) {
+    #leftAside{
+        display: none;
+    }
+  }
+  @media(width<=450px){
+    #formD,#NoAccount{
+        border: none;
+    }
+
+  }
+  hr{
+    width: 90px;
+    height: 1.5px;
+    /* margin-bottom: 4px; */
+    margin: 0px 10px 4px 10px;
+    display: inline-block;
+    color: #DBDBDB;
+    background-color: #dbdbdb;
+    border: none;
+  }
